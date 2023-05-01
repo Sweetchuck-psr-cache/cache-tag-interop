@@ -35,7 +35,8 @@ interface TaggableCacheItemInterface extends CacheItemInterface
     /**
      * Overwrite all tags with a new set of tags.
      *
-     * @param string[] $tags An array of tags
+     * @param string[] $tags
+     *   An array of tags.
      *
      * @throws \Psr\Cache\InvalidArgumentException
      *   When a tag is not valid.

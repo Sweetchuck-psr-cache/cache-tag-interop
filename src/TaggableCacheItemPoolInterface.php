@@ -39,11 +39,13 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
     /**
      * Invalidates cached items using tags.
      *
-     * @param string[] $tags An array of tags to invalidate
+     * @param string[] $tags
+     *   An array of tags to invalidate
      *
      * @throws InvalidArgumentException When $tags is not valid
      *
-     * @return bool True on success
+     * @return bool
+     *   True on success.
      */
     public function invalidateTags(array $tags): bool;
 
