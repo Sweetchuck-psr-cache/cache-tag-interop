@@ -36,3 +36,11 @@ jobs:
                     php_version: '${{ matrix.php_version }}'
                     command: 'run'
                     args: "lint:phpcs"
+            -
+                name: 'Lint - phpstan'
+                uses: 'php-actions/composer@v6'
+                with:
+                    version: '2.x'
+                    php_version: '${{ matrix.php_version }}'
+                    command: 'run'
+                    args: "lint:phpstan"
